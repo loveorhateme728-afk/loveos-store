@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOFTWARE — LOVE OS</title>
+<style>
+  :root{--bg:#0b0b0e;--panel:#141419;--line:rgba(255,255,255,.1);--neon:#22c55e;--gold:#ffcf6b;--cyan:#7CF7FF;--txt:#f2f2f2;--dim:rgba(242,242,242,.62)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:1.4rem 1rem 3rem}
+  .kicker{font-family:ui-monospace,monospace;font-size:.66rem;letter-spacing:.24em;color:var(--neon)}
+  h1{font-size:1.7rem;margin:.3rem 0 .2rem;letter-spacing:.04em}
+  h2{font-family:ui-monospace,monospace;font-size:.8rem;letter-spacing:.16em;color:var(--cyan);margin:2.2rem 0 .8rem}
+  .sub{font-size:.8rem;color:var(--dim);line-height:1.6}
+  .grid{display:grid;grid-template-columns:1fr;gap:.7rem}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+  .prod{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem;display:flex;flex-direction:column;gap:.4rem}
+  .prod b{font-size:1rem}
+  .prod .d{font-size:.8rem;color:var(--dim);line-height:1.6}
+  .prod .row{display:flex;justify-content:space-between;align-items:center;margin-top:.5rem}
+  .pr{font-family:ui-monospace,monospace;font-size:1.3rem;color:var(--gold)}
+  .buy{display:inline-block;background:var(--neon);color:#04120a;border-radius:9px;padding:.55rem 1.1rem;font-weight:800;font-size:.8rem;text-decoration:none}
+  .badge{font-family:ui-monospace,monospace;font-size:.62rem;letter-spacing:.1em;border:1px solid rgba(34,197,94,.55);color:var(--neon);border-radius:99px;padding:.2rem .7rem;display:inline-block}
+  .badge.demo{border-color:rgba(255,207,107,.55);color:var(--gold)}
+  .badge.open{border-color:rgba(124,247,255,.55);color:var(--cyan)}
+  .vid{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1rem 1.2rem}
+  .vid b{font-size:.95rem}
+  .vid .d{font-size:.8rem;color:var(--dim);line-height:1.6;margin:.3rem 0 .6rem}
+  video{width:100%;border-radius:10px;background:#000}
+  .slot{border:1px dashed rgba(124,247,255,.4);border-radius:14px;padding:1.1rem 1.2rem;color:var(--dim);font-size:.85rem;line-height:1.6}
+  .slot b{color:var(--cyan)}
+  .fine{font-size:.72rem;color:var(--dim);margin-top:1.6rem;line-height:1.7}
+  footer{margin-top:2.5rem;text-align:center;font-family:ui-monospace,monospace;font-size:.68rem;color:var(--dim)}
+  a{color:var(--cyan)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">LOVE OS · SOFTWARE · TOOLS · TUTORIALS</div>
+  <h1>SOFTWARE</h1>
+  <div class="sub">Software by CEO TroyFeeney / LOVE OS Inc. Every purchase goes to <b>$troytrini</b> on Cash App — send the exact price shown and put the product name in the note. Tutorial videos below show how to work the software and how to build AI agents from it.</div>
+
+  <h2>★ SOFTWARE FOR SALE</h2>
+  <div class="grid">
+    <div class="prod" id="fluffy"><span class="badge">SOFTWARE</span><b>FLUFFY — LOVEOS Upload Base · Long Term Suffering Edition</b><div class="d">Software only, runs on the buyer's machine. No hosting included.</div><div class="row"><span class="pr">$450</span><a class="buy" href="for-sale.html">GET IT</a></div></div>
+    <div class="prod" id="verified"><span class="badge">SOFTWARE</span><b>VERIFIED</b><div class="d">The VERIFIED package from the LOVE OS catalog.</div><div class="row"><span class="pr">$3,000</span><a class="buy" href="for-sale.html">GET IT</a></div></div>
+    <div class="prod" id="hq-blueprint"><span class="badge">SOFTWARE</span><b>HQ Blueprint</b><div class="d">The LOVEOS HQ blueprint package.</div><div class="row"><span class="pr">$1,050</span><a class="buy" href="for-sale.html">GET IT</a></div></div>
+    <div class="prod" id="group-box"><span class="badge">SOFTWARE</span><b>GROUP BOX</b><div class="d">The GROUP BOX package from the LOVE OS catalog.</div><div class="row"><span class="pr">$1,050</span><a class="buy" href="for-sale.html">GET IT</a></div></div>
+    <div class="prod" id="usage-rental"><span class="badge">SOFTWARE</span><b>Usage Rental</b><div class="d">Rental use of LOVE OS software under CEO terms.</div><div class="row"><span class="pr">$900</span><a class="buy" href="for-sale.html">GET IT</a></div></div>
+    <div class="prod" id="everything-bundle"><span class="badge">BUNDLE</span><b>Everything Bundle</b><div class="d">The bundle deal across the catalog.</div><div class="row"><span class="pr">$750</span><a class="buy" href="for-sale.html">GET IT</a></div></div>
+    <div class="prod" id="troyfeeneybrain"><span class="badge">AI ENGINE</span><b>TroyFeeneyBrain</b><div class="d">PyTorch behavioral engine — 64-input encoder, 128 hidden units, 13-output sigmoid head (Go Towards food, Eat, Hide, Flee, Idle, Roaming, Go Towards water, Drink, Suicide, Die, Sex, Alerted, Sleep). The brain that teaches how agents decide.</div><div class="row"><span class="pr">$300</span><a class="buy" href="for-sale.html">GET IT</a></div></div>
+    <div class="prod" id="games-all-access"><span class="badge">LICENSE</span><b>Games Store — All-Access License</b><div class="d">Commercial catalog license. Buyer note on Cash App: "GAMES300 + your name".</div><div class="row"><span class="pr">$300</span><a class="buy" href="games-store.html">GET IT</a></div></div>
+    <div class="prod" id="sub-solo"><span class="badge">SUBSCRIPTION</span><b>Subscription — Solo</b><div class="d">Solo subscription, per month.</div><div class="row"><span class="pr">$27/mo</span><a class="buy" href="for-sale.html">GET IT</a></div></div>
+    <div class="prod" id="sub-bundle"><span class="badge">SUBSCRIPTION</span><b>Subscription — Bundle</b><div class="d">Bundle subscription, per month.</div><div class="row"><span class="pr">$87/mo</span><a class="buy" href="for-sale.html">GET IT</a></div></div>
+  </div>
+
+  <h2>▶ TUTORIAL VIDEOS — HOW TO WORK THE SOFTWARE</h2>
+  <div class="grid">
+    <div class="vid"><b>Neural Pruning — The Winning Ticket (4K)</b><div class="d">How pruning works inside a neural network — the method behind the Neural Intelligence Lab.</div><video controls preload="metadata" src="../learning-guides/neural-pruning-4k.mp4"></video></div>
+    <div class="vid"><b>Neuron Cell 02 — Ribbon Tutorial</b><div class="d">The neuron cell, ribbon by ribbon — the visual language the Lab and TroyFeeneyBrain are built in.</div><video controls preload="metadata" src="../4khud/neuron-cell-02-ribbon-master.mp4"></video></div>
+    <div class="vid"><b>Taylor Series — 4K Tutorial</b><div class="d">How a series builds a function — core math under every agent model.</div><video controls preload="metadata" src="../4khud/taylor-series-4k-upgrade.mp4"></video></div>
+    <div class="vid"><b>Gradient Descent — Cinematic (52 Steps)</b><div class="d">Watch a model learn, step by step — the training loop every AI agent stands on.</div><video controls preload="metadata" src="../4khud/gradient-descent-cinematic-52-steps-4k.mp4"></video></div>
+  </div>
+
+  <h2>▶ BUILD AI AGENTS FROM THE SOFTWARE</h2>
+  <div class="sub">The agent-building series follows the AI Agent Engineering track: Python → Prompt Engineering → LangChain → RAG Pipelines → LangGraph + Multi-Agent + MCP → Evaluation (RAGAS · DeepEval · LLM-as-a-Judge · DSPy). Lessons land on this shelf as each stage is built — TroyFeeneyBrain and the Neural Intelligence Lab are the practice software.</div>
+  <div class="grid" style="margin-top:.8rem">
+    <div class="slot"><b>STAGE 1 — Python + Workbench</b><br>Lesson video lands here when Stage 1 is built.</div>
+    <div class="slot"><b>STAGE 3 — First LangChain Agent</b><br>Lesson video lands here when Stage 3 is built.</div>
+    <div class="slot"><b>STAGE 4 — RAG Over Your Own Files</b><br>Lesson video lands here when Stage 4 is built.</div>
+    <div class="slot"><b>STAGE 5 — LangGraph + MCP Agents</b><br>Lesson video lands here when Stage 5 is built.</div>
+  </div>
+
+  <h2>⚒ TOOLS</h2>
+  <div class="grid">
+    <div class="prod" id="chip8"><span class="badge open">TOOL · FREE FOR CEO</span><b>LOVEOS HQ CHIP-8 Emulator</b><div class="d">Complete CHIP-8 core in Python — all 35 opcodes, 64×32 display. Run it in Termux: <span style="font-family:ui-monospace,monospace">pkg install python -y</span> then <span style="font-family:ui-monospace,monospace">python3 loveos_chip8.py</span>.</div><div class="row"><span class="pr">TOOL</span><a class="buy" href="../loveos_chip8.py">DOWNLOAD</a></div></div>
+    <div class="prod" id="neural-lab"><span class="badge open">TOOL</span><b>LOVEOS Neural Intelligence Lab</b><div class="d">Live in-browser neural training lab — train real networks, watch the loss fall, run by Operator Nova.</div><div class="row"><span class="pr">OPEN</span><a class="buy" href="neural-intelligence-lab.html">OPEN IT</a></div></div>
+    <div class="prod" id="app-builder"><span class="badge open">TOOL</span><b>LOVE OS App Builder</b><div class="d">Describe an app, get the build plan — the studio's own builder page.</div><div class="row"><span class="pr">OPEN</span><a class="buy" href="app-builder.html">OPEN IT</a></div></div>
+    <div class="prod" id="graphics-design"><span class="badge open">SERVICE</span><b>Graphics Design</b><div class="d">Scientific and research visualization — methodology diagrams, graphical abstracts, frameworks, and journal-ready figures for researchers, PhD scholars, and labs. Price set by the CEO on request.</div><div class="row"><span class="pr">ASK CEO</span><a class="buy" href="for-sale.html">ASK</a></div></div>
+  </div>
+
+  <h2>＋ ADD-ONS — FEATURES · ACCESSORIES · KITS · CUSTOM BUILDS</h2>
+  <div class="sub">Open shelves, CEO. Say the word and a new feature, accessory, tool, kit, or custom-built add-on gets its own card here — priced only as you name it.</div>
+  <div class="grid" style="margin-top:.8rem">
+    <div class="slot"><b>FEATURES</b><br>New software features land here.</div>
+    <div class="slot"><b>ACCESSORIES</b><br>Accessories for the software and the studio land here.</div>
+    <div class="slot"><b>KITS</b><br>Teach &amp; Earn kits and new kits land here.</div>
+    <div class="slot"><b>CUSTOM BUILT ADD-ONS</b><br>Custom-built add-ons, made to order, land here.</div>
+  </div>
+
+  <div class="fine">No implied license is granted by viewing, downloading, or accessing this site. Use begins only after a written agreement is in place.<br><br>© 2026 LOVE OS Inc. / CEO TroyFeeney. All Rights Reserved. All titles listed as FREE / PLAY FREE are free to play under a personal, non-transferable play license only. No ownership, resale, distribution, or commercial rights are granted. All copyright, ownership, control, and 100% royalties remain with CEO TroyFeeney / LOVE OS Inc. Free to play never meant free to own.</div>
+  <div style="text-align:center;margin-top:2.2rem"><img src="../ceo-opening/troyfeeney-signature.png" alt="TroyFeeney signature" style="width:260px;max-width:70%;mix-blend-mode:screen"></div>
+  <footer>SOFTWARE · LOVE OS · CEO TROYFEENEY · $troytrini</footer>
+</div>
+</body>
+</html>
